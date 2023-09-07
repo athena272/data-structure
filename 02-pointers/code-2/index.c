@@ -2,6 +2,16 @@
 #include <stdlib.h>
 #include <time.h>
 
+void printVector(int *vet)
+{
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d ", *(vet + i));
+    }
+
+    printf("\n");
+}
+
 int main()
 {
     srand(time(NULL));
@@ -12,5 +22,7 @@ int main()
         vet[i] = rand() % 100;
     }
 
-    printf("%p\t%p\n", vet, &vet[0]);
+    printVector(vet);
+
+    // printf("%p\t%p\n", vet, &vet[0]);
 }
