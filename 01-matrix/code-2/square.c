@@ -19,12 +19,13 @@ int main()
         vetor2[i] = vetor1[i] * vetor1[i];
     }
 
+    printf("Vetor 1: ");
     for (int i = 0; i < 10; i++)
     {
         printf("%2d ", vetor1[i]);
     }
 
-    printf("\n");
+    printf("\nVetor 2: ");
     for (int i = 0; i < 10; i++)
     {
         printf("%2d ", vetor2[i]);
