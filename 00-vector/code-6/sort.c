@@ -15,7 +15,7 @@ void printVector(int *vet, int size)
 {
     for (int i = 0; i < size; i++)
     {
-        printf("%2d ", *(vet + i));
+        printf("%3d ", *(vet + i));
     }
 
     printf("\n");
