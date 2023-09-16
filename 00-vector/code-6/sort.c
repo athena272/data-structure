@@ -23,8 +23,13 @@ void printVector(int *vet, int size)
 
 void bubbleSort(int *vet, int size)
 {
-    for (int j = 0; j < size; j++)
+    int hasSwapped = 0;
+    int qtdSwaps = 0;
+
+    do
     {
+        hasSwapped = 0;
+        qtdSwaps++;
         for (int i = 0; i < size - 1; i++)
         {
             if (vet[i] > vet[i + 1])
@@ -34,9 +39,13 @@ void bubbleSort(int *vet, int size)
                 // swap
                 vet[i] = vet[i + 1];
                 vet[i + 1] = tempVar;
+
+                hasSwapped = 1;
             }
         }
-    }
+    } while (hasSwapped);
+
+    printf("\nQuantidade de trocas: %d\n", qtdSwaps - 1);
 }
 
 int main()
