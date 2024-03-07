@@ -46,6 +46,7 @@ int main()
     for (int i = 0; i < 3; i++)
     {
         persons[i] = readPerson();
+        printf("\n");
     }
 
     for (int i = 0; i < 3; i++)
