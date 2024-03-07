@@ -16,7 +16,7 @@ typedef struct {
 void printAPerson(Person person) {
     printf("\tName: %s\n", person.name);
     printf("\tAge: %d\n", person.age);
-    printf("\tSex: %s\n", person.sex);
+    printf("\tSex: %c\n", person.sex);
     printf("\tBirth Date: %d/%d/%d\n", person.birthDate.day, person.birthDate.month, person.birthDate.year);
 }
 
