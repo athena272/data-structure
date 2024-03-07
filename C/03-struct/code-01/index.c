@@ -1,26 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
-//criar vetor struct
+// criar vetor struct
 
-typedef struct {
+typedef struct
+{
     int day, month, year;
 } BirthDate;
 
-typedef struct {
+typedef struct
+{
     BirthDate birthDate;
     int age;
     char sex;
     char name[100];
 } Person;
 
-void printAPerson(Person person) {
+void printAPerson(Person person)
+{
     printf("\tName: %s\n", person.name);
     printf("\tAge: %d\n", person.age);
     printf("\tSex: %c\n", person.sex);
     printf("\tBirth Date: %d/%d/%d\n", person.birthDate.day, person.birthDate.month, person.birthDate.year);
 }
 
-Person readPerson() {
+Person readPerson()
+{
     Person person;
     printf("Type your name: ");
     fgets(person.name, 100, stdin);
@@ -35,9 +39,10 @@ Person readPerson() {
     return person;
 }
 
-int main() {
+int main()
+{
     Person person;
-    person =  readPerson();
+    person = readPerson();
     printAPerson(person);
 
     return 0;
