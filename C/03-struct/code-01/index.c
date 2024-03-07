@@ -41,9 +41,17 @@ Person readPerson()
 
 int main()
 {
-    Person person;
-    person = readPerson();
-    printAPerson(person);
+    Person persons[3];
+
+    for (int i = 0; i < 3; i++)
+    {
+        persons[i] = readPerson();
+    }
+
+    for (int i = 0; i < 3; i++)
+    {
+        printAPerson(persons[i]);
+    }
 
     return 0;
 }
