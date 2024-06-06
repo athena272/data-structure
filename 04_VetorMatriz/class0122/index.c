@@ -5,7 +5,7 @@ int main()
 {
 
     int tam = 10;
-    int l, c, mat[tam][tam];
+    int l, c, mat[10][10];
 
     srand(time(NULL));
 
